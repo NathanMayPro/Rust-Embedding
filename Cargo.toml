@@ -1,0 +1,17 @@
+[package]
+name = "rust_embedding"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7", features = ["json", "macros"] }
+dotenv = "0.15.0"
+reqwest = { version = "0.12.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1", features = ["full", "macros", "test-util"] }
+serde_json = "1.0"
+proc-macro2 = "1.0"
+utoipa = { version = "5.3.0", features = ["axum_extras"] }
+utoipa-swagger-ui = { version = "8.1.0", features = ["axum"] }
+
+[dev-dependencies]
